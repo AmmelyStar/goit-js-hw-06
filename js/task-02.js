@@ -20,7 +20,7 @@ const markup = ingredients.map((ingredient) => {
   return li;
 
 });
-
+list.append(...markup);
  console.log(list);
 
 
