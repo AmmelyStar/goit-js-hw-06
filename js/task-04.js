@@ -4,29 +4,33 @@ const minBtn = document.querySelector('button[data-action="decrement"]');
 
 let counterValue = 0;
 
-plusBtn.addEventListener('click', () => {
+const plusCounter = () => {
     counterValue += 1;
     value.textContent = counterValue;
-});
+};
 
-minBtn.addEventListener('click', () => {
+const minCounter = () => {
     counterValue -= 1;
     value.textContent = counterValue;
-});
+};
+
+plusBtn.addEventListener("click", plusCounter);
+minBtn.addEventListener("click", minCounter);
+
+
 
 //  2 варіант
-// const plusCounter = () => {
+
+// plusBtn.addEventListener('click', () => {
 //     counterValue += 1;
 //     value.textContent = counterValue;
-// };
+// });
 
-// const minCounter = () => {
+// minBtn.addEventListener('click', () => {
 //     counterValue -= 1;
 //     value.textContent = counterValue;
-// };
+// });
 
-// plusBtn.addEventListener("click", plusCounter);
-// minBtn.addEventListener("click", minCounter);
 
 
 
